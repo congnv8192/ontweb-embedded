@@ -1,0 +1,16 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:wo="http://example.com#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://example.com">
+    <rdfs:comment xml:lang="vi">wiki 2 ontology</rdfs:comment>
+    <owl:versionIRI rdf:resource="http://example.com/1.0"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://example.com#Article"/>
+  <owl:Class rdf:about="http://example.com#Template"/>
+  <owl:Class rdf:about="http://example.com#Category"/>
+  <owl:DatatypeProperty rdf:about="http://example.com#summary"/>
+  <owl:DatatypeProperty rdf:about="http://example.com#infobox"/>
+</rdf:RDF>

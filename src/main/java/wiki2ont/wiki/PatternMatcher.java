@@ -75,7 +75,7 @@ public class PatternMatcher {
 	private void parseContentAndTemplates() {
 		StringBuilder sb = new StringBuilder(this.matcher.getText());
 		String WIKI_TAG_CONST_STR = "{{";
-		templates = new ArrayList<String>();
+		templates = new ArrayList<>();
 
 		int startPos = sb.indexOf(WIKI_TAG_CONST_STR);
 		while (startPos >= 0) {
@@ -223,7 +223,7 @@ public class PatternMatcher {
 	}
 
 	private void parseCategories() {
-		pageCats = new ArrayList<String>();
+		pageCats = new ArrayList<>();
 
 		// en
 		pageCats.addAll(this.matcher.getCategories());
@@ -309,7 +309,7 @@ public class PatternMatcher {
 	public Map<String, String> getInfoBoxAttributes() {
 		Scanner scanner = new Scanner(getPlainText(this.infoBox.getText()));
 		
-		Map<String, String> attributes = new HashMap<String, String>();
+		Map<String, String> attributes = new HashMap<>();
 		String attribute = null;
 		String value = null;
 

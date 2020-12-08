@@ -31,7 +31,6 @@ import wiki2ont.wiki.Utils;
 
 @WebServlet("/query")
 public class QueryServlet extends Servlet {
-	private static final long serialVersionUID = 1L;
 	private Wiki2Ont app;
 
 	@Override
@@ -74,7 +73,7 @@ public class QueryServlet extends Servlet {
 			} catch (UnsupportedEncodingException e) {
 				result.put("onArticle", false);
 				result.put("onArticleError", e.getMessage());
-			} catch (Exception e) {
+			} catch (FileNotFoundException | URISyntaxException e) {
 				result.put("onSave", false);
 				result.put("onSaveError", e.getMessage());
 			}
@@ -86,9 +85,9 @@ public class QueryServlet extends Servlet {
 	}
 	
 	private List<Map<String, Object>> toMap(List<OntIndividual> individuals) {
-		List<Map<String, Object>> data = new ArrayList<Map<String, Object>>();
+		List<Map<String, Object>> data = new ArrayList<>();
 		for(OntIndividual individual : individuals) {
-			Map<String, Object> result = new HashMap<String, Object>();
+			Map<String, Object> result = new HashMap<>();
 			
 			result.put("label", individual.getLabel());
 			result.put("uri", individual.getURI());
@@ -106,7 +105,7 @@ public class QueryServlet extends Servlet {
 			}
 
 			// same as
-			List<Map<String, String>> sameIndividuals = new ArrayList<Map<String, String>>();
+			List<Map<String, String>> sameIndividuals = new ArrayList<>();
 			individual.sameIndividuals().forEach(in -> {
 				Map<String, String> props = new HashMap<>();
 				
