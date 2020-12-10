@@ -44,7 +44,8 @@ public class QueryServlet extends Servlet {
 		
 		request.setCharacterEncoding("UTF-8");
 
-		String q = Utils.paramToUTF8(request.getParameter("q"));
+//		String q = Utils.paramToUTF8(request.getParameter("q"));
+		String q = request.getParameter("q");
 		
 		// wiki search
 		String page = app.search(q);
