@@ -271,7 +271,7 @@ public class Wiki2Ont implements IArticleFilter {
 	public String search(String q) throws UnsupportedEncodingException {
 		q = URLEncoder.encode(q, "UTF-8");
 
-		String url = "https://vi.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srsearch=" + q;
+		String url = "https://vi.wikipedia.org/w/api.php?action=query&format=json&list=search&utf8=1&srwhat=nearmatch&srsearch=" + q;
 
 		String json = sendGet(url);
 

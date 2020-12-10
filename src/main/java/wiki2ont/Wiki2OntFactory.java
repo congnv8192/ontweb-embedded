@@ -1,6 +1,7 @@
 package wiki2ont;
 
 import java.io.File;
+import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStream;
 
@@ -14,7 +15,8 @@ public class Wiki2OntFactory {
 		if (app == null) {
 			app = new Wiki2Ont(AppConfig.URI);
 			
-			try (InputStream is = Wiki2OntFactory.class.getClassLoader().getResourceAsStream(AppConfig.WEB_PATH_ONTO)) {
+			File file = new File(AppConfig.WEB_PATH_ONTO);
+			try (InputStream is = new FileInputStream(file)) {
 				System.out.println("loading...");
 				// load ontology
 				app.loadOntology(is, Lang.RDFXML);

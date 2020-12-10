@@ -276,7 +276,9 @@ public class PatternMatcher {
 		text = Utils.decodeHtmlEntities(text);
 
 		text = text.replaceAll("<ref>.*?</ref>", " ");
-		text = text.replaceAll("</?.*?>", " ");
+//		text = text.replaceAll("</?.*?>", " ");
+		text = text.replaceAll("<[^>]+>", " ");
+		
         text = text.replaceAll("\\{\\{.*?\\}\\}", " ");
 		text = text.replaceAll("\\[\\[.*?:.*?\\]\\]", " ");
 		text = text.replaceAll("\\[\\[(.*?)\\]\\]", "$1");
@@ -341,13 +343,14 @@ public class PatternMatcher {
 
 		scanner.close();
 		
+//		return attributes;
 		
 		// remove empty attributes
 		Map<String, String> result = new HashMap<String, String>();
 		for (String key : attributes.keySet()) {
 			String v = attributes.get(key);
 			
-			if (attributes.get(key).trim().isEmpty()) {
+			if (!attributes.get(key).trim().isEmpty()) {
 				result.put(key, v);
 			}
 		}
@@ -356,7 +359,8 @@ public class PatternMatcher {
 	}
 
 	public static void main(String[] args) {
-		String test = "{{Infobox animanga/Header\n" + "| name            = Denpa Kyōshi\n"
+		String test = "{{Infobox animanga/Header\n" 
+				+ "| name            = Denpa Kyōshi\n"
 				+ "| image           = [[Tập tin:Denpa cover.jpg|230px]]\n"
 				+ "| caption         = Bìa của tập 1, các nhân vật chính Jun'ichirō và Suzune Kagami\n"
 				+ "| ja_kanji        = 電波教師\n" + "| ja_romaji       = Denpa Kyōshi\n"
@@ -374,7 +378,8 @@ public class PatternMatcher {
 				+ "| network      = [[Nippon Television Network System|NNS]] ([[Yomiuri Telecasting Corporation|ytv]])\n"
 				+ "| network_en   = {{English anime network|US=[[Funimation]]}}\n"
 				+ "| first        = 4 tháng 4 năm 2015\n" + "| last         = 26 tháng 9 năm 2015\n"
-				+ "| episodes     = 24\n" + "| episode_list = \n" + "}}\n" + "{{Infobox animanga/Footer}}\n" + "\n"
+				+ "| episodes     = 24\n" + "| episode_list = \n" + "}}\n" + 
+				"{{Infobox animanga/Footer}}\n" + "\n"
 				+ "{{Nihongo|'''Denpa Kyōshi'''|{{ruby|電波教師|でんぱきょうし}}||hanviet=Điện ba Giáo sư|kyu=|hg=|kk=|&quot;Thầy giáo Sóng điện&quot;, tựa [[tiếng Anh]]: ''He is an Ultimate Teacher''}} là một loạt [[Manga|truyện tranh]] [[Nhật Bản]] năm 2011, được viết và minh họa bởi Takeshi Azuma.&lt;ref name=&quot;ANN1&quot;&gt;&lt;cite class=&quot;citation web&quot;&gt;[http://www.animenewsnetwork.com/news/2013-02-17/denpa-kyoshi-manga-2nd-anime-ad-by-a-1-pictures-aired &quot;''Denpa Kyōshi'' Manga's 2nd Anime Ad by A-1 Pictures Aired&quot;]. &lt;/cite&gt;&lt;/ref&gt; Hai clip [[anime]] ngắn, được dùng để quảng bá cho bộ truyện này, đã được phát hành, và một loạt [[anime]] truyền hình được sản xuất, tất cả đều bởi [[A-1 Pictures]].&lt;ref name=&quot;ANN1&quot;/&gt;&lt;ref&gt;&lt;cite class=&quot;citation web&quot;&gt;Green, Scott (ngày 3 tháng 10 năm 2012). &lt;/cite&gt;&lt;/ref&gt;\n"
 				+ "\n" + "== Cốt truyện ==\n"
 				+ "Câu chuyện kể về Kagami Jun'ichirō, với một người em gái là Suzune đang tức giận anh ta vì của anh ta hoàn toàn không quan tâm gì đến thế giới thực. Do Jun'ichirō chỉ quan tâm đến anime, manga và games, Suzune bắt anh phải đi làm việc và trở thành một thầy giáo vật lý thay thế ở ngôi trường mà anh từng học. Jun'ichirō chứng minh mình là một giáo viên có năng lực và chăm chỉ, một người coi các phương pháp chính thống để dạy dỗ học sinh dựa trên kiến thức là vô ích, anh dạy dỗ và động viên học sinh của mình theo cái cách của một [[otaku]] chính hiệu.\n"
@@ -465,11 +470,19 @@ public class PatternMatcher {
 				+ "[[Thể loại:Manga dài tập]]";
 
 		PatternMatcher matcher = new PatternMatcher(test);
+		
+		InfoBox infoBox = matcher.getInfoBox();
+//		System.out.println(infoBox);
 
 //		String content = matcher.getContent();
 //		System.out.println(matcher.toPlainText(content));
-
-		System.out.println(matcher.getSummary());
-
+		
+		Map<String, String> attributes = matcher.getInfoBoxAttributes();
+		for (String key : attributes.keySet()) {
+			System.out.println(key + ": " + attributes.get(key));
+		}
+		
+//		String text = "Abc<html>124<html> {{1234}} test";
+//		System.out.println(matcher.getPlainText(text));
 	}
 }

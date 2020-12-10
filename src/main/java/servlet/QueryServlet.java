@@ -59,13 +59,12 @@ public class QueryServlet extends Servlet {
 				// wiki article
 				WikiArticle article = app.addArticleByUrl(page);
 				
-				System.out.println(article.getText());
-				
 				// save
-				URL url = getClass().getClassLoader().getResource(AppConfig.WEB_PATH_ONTO);
-				OutputStream os = new FileOutputStream(new File(url.toURI()));
-				app.exportOntology(os, Lang.RDFXML);
-				result.put("onSave", true);
+				File file = new File(AppConfig.WEB_PATH_ONTO);
+				try (OutputStream os = new FileOutputStream(file)) {
+					app.exportOntology(os, Lang.RDFXML);
+					result.put("onSave", true);
+				}
 				
 				// retry
 				individuals = app.query(article.getTitle());
@@ -73,7 +72,7 @@ public class QueryServlet extends Servlet {
 			} catch (UnsupportedEncodingException e) {
 				result.put("onArticle", false);
 				result.put("onArticleError", e.getMessage());
-			} catch (FileNotFoundException | URISyntaxException e) {
+			} catch (FileNotFoundException  e) {
 				result.put("onSave", false);
 				result.put("onSaveError", e.getMessage());
 			}

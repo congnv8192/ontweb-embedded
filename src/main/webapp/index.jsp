@@ -8,7 +8,6 @@
   <body>
   
      <h2>Query: GET /query?q=</h2>
-     <p>Example: <a href="/query?q=đại học quốc gia hà nội">/query?q=đại học quốc gia hà nội</a></p>
-     
+     <p>Example: <a href="/query?q=quang trung">/query?q=Quang Trung</a></p>
   </body>
 </html>
