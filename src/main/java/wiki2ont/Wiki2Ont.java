@@ -66,6 +66,7 @@ public class Wiki2Ont implements IArticleFilter {
 		// init ontology
 		OntologyManager manager = OntManagers.createONT();
 		model = manager.createGraphModel(uri);
+		
 
 		model.getID().setVersionIRI(uri + "/1.0");
 		model.getID().addComment("wiki 2 ontology", "vi");
@@ -143,7 +144,7 @@ public class Wiki2Ont implements IArticleFilter {
 
 		OntIndividual inArticle = clArticle.createIndividual(getURI(article.getTitle()));
 		inArticle.addLabel(article.getTitle());
-
+		
 		// redirect
 		if (matcher.isRedirect()) {
 			String redirectText = matcher.getRedirectText();
@@ -187,6 +188,8 @@ public class Wiki2Ont implements IArticleFilter {
 			inArticle.addClassAssertion(clInfoBox);
 
 			// prop
+//			inArticle.annotations();
+			
 			inArticle.addProperty(propInfobox, new Gson().toJson(matcher.getInfoBoxAttributes()));
 //			inArticle.addProperty(propInfobox, matcher.getInfoBox().getText());
 		}
@@ -253,7 +256,7 @@ public class Wiki2Ont implements IArticleFilter {
 		String url = "https://vi.wikipedia.org/w/api.php?action=parse&prop=wikitext&format=json&page=" + page;
 
 		String json = sendGet(url);
-
+		
 		JsonObject result = JsonParser.parseString(json).getAsJsonObject();
 		JsonObject parse = result.getAsJsonObject("parse");
 
