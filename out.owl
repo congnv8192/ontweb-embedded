@@ -1,0 +1,358 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://ktgroup.vn#Sinh_tại_Lệ_Thủy,"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:kt="http://ktgroup.vn#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <owl:Ontology rdf:about="http://ktgroup.vn">
+    <owl:versionIRI rdf:resource="http://ktgroup.vn/20201215"/>
+  </owl:Ontology>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_II">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa II</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_II">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa II</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_V_Quảng_Bình">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa V Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Người_thọ_bách_niên_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Người thọ bách niên Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Huy_hiệu_70_năm_tuổi_Đảng_Cộng_sản_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Huy hiệu 70 năm tuổi Đảng Cộng sản Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_V">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa V</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VII">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa VII</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_II">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa II</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Tướng_lĩnh_Quân_đội_nhân_dân_Việt_Nam_người_Quảng_Bình">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Tướng lĩnh Quân đội nhân dân Việt Nam người Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_IV_Quảng_Bình">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa IV Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Chiến_dịch_Điện_Biên_Phủ">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Chiến dịch Điện Biên Phủ</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Học_sinh_Quốc_học_Huế">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Học sinh Quốc học Huế</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Bộ_trưởng_Bộ_Quốc_phòng_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Bộ trưởng Bộ Quốc phòng Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Quân_nhân_trong_Chiến_tranh_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Quân nhân trong Chiến tranh Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Huân_chương_Quân_công_hạng_Nhất">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Huân chương Quân công hạng Nhất</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_II_Quảng_Bình">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa II Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Cựu_học_sinh_Trung_học_Albert_Sarraut">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Cựu học sinh Trung học Albert Sarraut</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Tướng_lĩnh_Quân_đội_nhân_dân_Việt_Nam_thụ_phong_thập_niên_1940">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Tướng lĩnh Quân đội nhân dân Việt Nam thụ phong thập niên 1940</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Bộ_trưởng_Bộ_Khoa_học_và_Công_nghệ_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Bộ trưởng Bộ Khoa học và Công nghệ Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Sinh_tại_Lệ_Thủy,_Quảng_Bình">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Sinh tại Lệ Thủy, Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Infobox">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Wiki"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Infobox</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Wiki">
+    <rdfs:label>Wiki</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_IV">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa IV</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Phó_Thủ_tướng_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Phó Thủ tướng Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Huân_chương_Hồ_Chí_Minh">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Huân chương Hồ Chí Minh</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_I">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa I</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_III">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa III</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_III_Quảng_Bình">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa III Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Huân_chương_Sao_Vàng">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Huân chương Sao Vàng</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Tân_Việt_Cách_mệnh_Đảng">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Tân Việt Cách mệnh Đảng</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_V">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa V</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Anh_hùng_dân_tộc_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Anh hùng dân tộc Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_IV">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa IV</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VII_Quảng_Bình">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa VII Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Nhà_cách_mạng_Việt_Nam">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Nhà cách mạng Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_III">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Ủy viên Bộ Chính trị Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa III</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Huân_chương_Chiến_thắng">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Huân chương Chiến thắng</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_III">
+    <rdfs:subClassOf>
+      <owl:Class rdf:about="http://ktgroup.vn#Category"/>
+    </rdfs:subClassOf>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa III</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Category">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Wiki"/>
+    <rdfs:label>Category</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VI_Quảng_Bình">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa VI Quảng Bình</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Bộ_trưởng_Bộ_Nội_vụ_Việt_Nam">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdfs:label>Bộ trưởng Bộ Nội vụ Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VI">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa VI</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Nhà_dân_tộc_chủ_nghĩa_Việt_Nam">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdfs:label>Nhà dân tộc chủ nghĩa Việt Nam</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_I">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdfs:label>Đại biểu Quốc hội Việt Nam khóa I</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_IV">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdfs:label>Ủy viên Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa IV</rdfs:label>
+  </owl:Class>
+  <owl:Class rdf:about="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_I">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdfs:label>Ủy viên Ban Chấp hành Trung ương Đảng Cộng sản Việt Nam khóa I</rdfs:label>
+  </owl:Class>
+  <owl:DatatypeProperty rdf:about="http://ktgroup.vn#termDescription">
+    <rdfs:label>termDescription</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://ktgroup.vn#thumbnail">
+    <rdfs:label>thumbnail</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://ktgroup.vn#openingText">
+    <rdfs:label>openingText</rdfs:label>
+  </owl:DatatypeProperty>
+  <owl:AnnotationProperty rdf:about="http://ktgroup.vn#version">
+    <rdfs:subPropertyOf>
+      <owl:AnnotationProperty rdf:about="http://ktgroup.vn#wiki">
+        <rdfs:label>wiki</rdfs:label>
+      </owl:AnnotationProperty>
+    </rdfs:subPropertyOf>
+    <rdfs:label>version</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://ktgroup.vn#pageID">
+    <rdfs:subPropertyOf rdf:resource="http://ktgroup.vn#wiki"/>
+    <rdfs:label>pageID</rdfs:label>
+  </owl:AnnotationProperty>
+  <owl:AnnotationProperty rdf:about="http://ktgroup.vn#fetched">
+    <rdfs:subPropertyOf rdf:resource="http://ktgroup.vn#wiki"/>
+    <rdfs:label>fetched</rdfs:label>
+  </owl:AnnotationProperty>
+  <kt:Tướng_lĩnh_Quân_đội_nhân_dân_Việt_Nam_thụ_phong_thập_niên_1940 rdf:about="http://ktgroup.vn#Võ_Nguyên_Giáp">
+    <rdfs:subClassOf rdf:resource="http://ktgroup.vn#Category"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Huân_chương_Sao_Vàng"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Huân_chương_Quân_công_hạng_Nhất"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Chiến_dịch_Điện_Biên_Phủ"/>
+    <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#Class"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Huân_chương_Chiến_thắng"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_I"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Huân_chương_Hồ_Chí_Minh"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_III_Quảng_Bình"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Phó_Thủ_tướng_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_V"/>
+    <rdfs:label>Võ Nguyên Giáp</rdfs:label>
+    <kt:fetched rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</kt:fetched>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_III"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_III"/>
+    <kt:pageID rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >867</kt:pageID>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_V_Quảng_Bình"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_I"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Quân_nhân_trong_Chiến_tranh_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VI_Quảng_Bình"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_IV"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Huy_hiệu_70_năm_tuổi_Đảng_Cộng_sản_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_II"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_I"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VII"/>
+    <kt:openingText>Võ Nguyên Giáp (25 tháng 8 năm 1911 – 4 tháng 10 năm 2013), tên khai sinh là Võ Giáp, còn được gọi là tướng Giáp hoặc anh Văn, là một nhà chỉ huy quân sự và chính trị gia Việt Nam. Ông được bình chọn là một trong 100 vị tướng xuất sắc nhất mọi thời đại, và cũng là một trong những nhà quân sự vĩ đại nhất lịch sử hiện đại. Ông là Đại tướng đầu tiên, Tổng Tư lệnh của Quân đội nhân dân Việt Nam, cũng là người chỉ huy đầu tiên của Quân đội nhân dân Việt Nam, là một trong những người góp công thành lập Việt Nam Dân chủ Cộng hòa, được Chính phủ Việt Nam đánh giá là "người học trò xuất sắc và gần gũi của Chủ tịch Hồ Chí Minh", là chỉ huy chính trong các chiến dịch và chiến thắng chính trong Chiến tranh Đông Dương (1946–1954) đánh đuổi Thực dân Pháp, Chiến tranh Việt Nam (1960–1975), thống nhất đất nước và Chiến tranh biên giới Việt – Trung (1979) chống quân Trung Quốc tấn công biên giới phía Bắc. Xuất thân là một giáo viên dạy lịch sử, ông trở thành người được đánh giá là một trong những nhà lãnh đạo quân sự lỗi lạc trong lịch sử Việt Nam. Ông cũng được đánh giá là một trong những vị tướng tài giỏi trên thế giới. Ông được nhiều tờ báo ca ngợi là anh hùng dân tộc của nhân dân Việt Nam. Võ Nguyên Giáp là người đầu tiên được tặng thưởng Huân chương Hồ Chí Minh và cho tới nay là người duy nhất 2 lần được tặng thưởng Huân chương này (lần thứ nhất năm 1950 và lần thứ hai năm 1979).</kt:openingText>
+    <rdf:type rdf:resource="http://ktgroup.vn#Nhà_dân_tộc_chủ_nghĩa_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_III"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Học_sinh_Quốc_học_Huế"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Võ_Nguyên_Giáp"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VII_Quảng_Bình"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_II"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Sinh_tại_Lệ_Thủy,_Quảng_Bình"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Bộ_trưởng_Bộ_Nội_vụ_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_IV"/>
+    <kt:thumbnail>https://upload.wikimedia.org/wikipedia/vi/thumb/2/28/V%C3%B5_Nguy%C3%AAn_Gi%C3%A1p_1954.png/34px-V%C3%B5_Nguy%C3%AAn_Gi%C3%A1p_1954.png</kt:thumbnail>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_V"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Cựu_học_sinh_Trung_học_Albert_Sarraut"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam_khóa_II"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Tân_Việt_Cách_mệnh_Đảng"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Nhà_cách_mạng_Việt_Nam"/>
+    <kt:termDescription>Nhà chỉ huy quân sự và chính trị gia Việt Nam</kt:termDescription>
+    <rdf:type rdf:resource="http://ktgroup.vn#Bộ_trưởng_Bộ_Quốc_phòng_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Tướng_lĩnh_Quân_đội_nhân_dân_Việt_Nam_người_Quảng_Bình"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Ủy_viên_Bộ_Chính_trị_Ban_Chấp_hành_Trung_ương_Đảng_Cộng_sản_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_IV_Quảng_Bình"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Người_thọ_bách_niên_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_VI"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Anh_hùng_dân_tộc_Việt_Nam"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_II_Quảng_Bình"/>
+    <kt:version rdf:datatype="http://www.w3.org/2001/XMLSchema#long"
+    >64249832</kt:version>
+    <rdf:type rdf:resource="http://ktgroup.vn#Đại_biểu_Quốc_hội_Việt_Nam_khóa_IV"/>
+    <rdf:type rdf:resource="http://ktgroup.vn#Bộ_trưởng_Bộ_Khoa_học_và_Công_nghệ_Việt_Nam"/>
+  </kt:Tướng_lĩnh_Quân_đội_nhân_dân_Việt_Nam_thụ_phong_thập_niên_1940>
+</rdf:RDF>
