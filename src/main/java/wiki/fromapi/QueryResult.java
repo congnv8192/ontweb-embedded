@@ -44,11 +44,13 @@ public class QueryResult {
 			article.termDescription = terms.get("description").getAsString();
 			
 			JsonArray alias = terms.getAsJsonArray("alias");
-			List<String> termAlias = new ArrayList<>();
-			for (int i = 0; i < alias.size(); i++) {
-				termAlias.add(alias.get(i).getAsString());
+			if (alias != null) {
+				List<String> termAlias = new ArrayList<>();
+				for (int i = 0; i < alias.size(); i++) {
+					termAlias.add(alias.get(i).getAsString());
+				}
+				article.termAlias = termAlias;
 			}
-			article.termAlias = termAlias;
 		}
 		
 		return article;
