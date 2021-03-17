@@ -7,6 +7,8 @@ import java.nio.charset.Charset;
 import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.apache.jena.query.QueryExecution;
 import org.apache.jena.query.QueryExecutionFactory;
@@ -105,10 +107,22 @@ public class AppOntology {
 			
 			RDFNode node = querySolution.get("x");
 			OntIndividual individual = model.getIndividual(node.toString());
-
+			
 			individuals.add(individual);
 		}
 
+		return individuals;
+	}
+	
+	public List<OntIndividual> getByType(String category) {
+		List<OntIndividual> individuals = new ArrayList<OntIndividual>();
+		OntClass c = model.getOntClass(uri);
+		if (c != null) {
+			c.individuals().forEach((individual) -> {
+				individuals.add(individual);
+			});
+		}
+		 
 		return individuals;
 	}
 	
@@ -179,4 +193,17 @@ public class AppOntology {
 		return p;
 	}
 	
+	/**
+	 * @requires individual != null
+	 */
+	public boolean isFetched(OntIndividual individual) {
+		try (Stream<RDFNode> res = individual.annotationValues(KT.fetched)) {
+			RDFNode node = res.findFirst().orElse(null);
+			if (node == null) {
+				return false;
+			}
+			
+			return node.asLiteral().getBoolean();
+        }
+	}
 }

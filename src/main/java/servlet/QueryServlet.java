@@ -1,6 +1,7 @@
 package servlet;
 
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.ServletException;
@@ -30,11 +31,19 @@ public class QueryServlet extends Servlet {
 
 //		String q = Utils.paramToUTF8(request.getParameter("q"));
 		String q = request.getParameter("q");
+		String t = request.getParameter("t");
+		List<OntIndividual> individuals = new ArrayList<OntIndividual>();
 		
-		// wiki search
-		List<OntIndividual> individuals = app.search(q);
+		if (q != null) {
+			// wiki search
+			individuals = app.search(q);
+		} else if (t != null) {
+			// individuals by type
+			individuals = app.getByType(t);
+		}
+		
 		SearchResult result = new SearchResult(individuals);
-		
 		json(response, result.getResults());
 	}
+	
 }

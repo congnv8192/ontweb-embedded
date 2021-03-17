@@ -125,23 +125,73 @@ public class App {
 
 		return data;
 	}
+	
+	public List<OntIndividual> getByType(String type) {
+		List<OntIndividual> individuals = getByTypeLocal(type);
+		
+		List<String> titles = QueryAPI.categoryMembers(type);
+		for (OntIndividual individual : individuals) {
+			String title = individual.getLabel();
+			if (titles.contains(title)) {
+				titles.remove(title);
+			}
+		}
+		
+		if (!titles.isEmpty()) {
+			for (String title : titles) {
+				OntIndividual individual = ontology.getOrCreateIndividual(title);
+				individuals.add(individual);
+			}
+			
+			export();
+		}
+		
+		return individuals;
+	}
+	
+	public List<OntIndividual> getByTypeLocal(String type) {
+		return ontology.getByType(type);
+	}
+	
+	public void export() {
+		// export ontology
+		try {
+			ontology.save(new FileOutputStream(AppConfig.PATH_ONT));
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+			System.out.println("Failed to saved file ontology.");
+		}
+	}
 
 	public List<OntIndividual> search(String keyword) {
 		List<OntIndividual> individuals = searchLocal(keyword);
-
+		
+		boolean export = false;
 		if (individuals.isEmpty()) {
 			OntIndividual individual = searchAPI(keyword);
 			if (individual != null) {
 				individuals.add(individual);
-
-				// export ontology
-				try {
-					ontology.save(new FileOutputStream(AppConfig.PATH_ONT));
-				} catch (FileNotFoundException e) {
-					e.printStackTrace();
-					System.out.println("Failed to saved file ontology.");
+				export = true;
+			}
+		} else {
+			for (int i = 0; i < individuals.size(); i++) {
+				OntIndividual individual = individuals.get(i);
+				
+				if (!ontology.isFetched(individual)) { // get data if this was created by reference before
+					OntIndividual tmp = searchAPIByTitle(individual.getLabel());
+					
+					if (tmp != null) {
+						individuals.set(i, tmp);
+						export = true;
+					} else { // title not exist anymore -> updated -> remove
+						// TODO:
+					}
 				}
 			}
+		}
+		
+		if (export) {
+			export();
 		}
 
 		return individuals;
@@ -160,9 +210,15 @@ public class App {
 			return null;
 		}
 
+		OntIndividual individual = searchAPIByTitle(titles.get(0));
+		
+		return individual;
+	}
+	
+	public OntIndividual searchAPIByTitle(String title) {
 		// get article by title
-		Article article = QueryAPI.queryArticleByTitle(titles.get(0));
-		System.out.println(article.sourceText);
+		Article article = QueryAPI.queryArticleByTitle(title);
+//				System.out.println(article.sourceText);
 
 		if (article == null) {
 			return null;

@@ -53,6 +53,28 @@ public class QueryResult {
 			}
 		}
 		
+		// phân tích nghĩa của các câu - thư viện python - ner 
+		// 
+		
 		return article;
+	}
+	
+	public static List<String> toArticleTitles(Reader reader) {
+		List<String> titles = new ArrayList<String>();
+
+		JsonArray search = JsonParser.parseReader(reader).getAsJsonObject().getAsJsonObject("query")
+				.getAsJsonArray("categorymembers");
+
+		for (int i = 0; i < search.size(); i++) {
+			JsonObject page = search.get(i).getAsJsonObject();
+			int ns = page.get("ns").getAsInt();
+			if (ns == 0) { // article
+				String title = page.get("title").getAsString();
+				titles.add(title);
+//				System.out.println(title);
+			}
+		}
+
+		return titles;
 	}
 }

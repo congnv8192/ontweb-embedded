@@ -30,5 +30,4 @@ public class SearchAPI {
 			return null;
 		}
 	}
-	
 }
