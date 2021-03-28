@@ -12,6 +12,6 @@
      
      <hr>
      <h2>Query: GET /query?t= <small>get individuals by type</small></h2>
-     <p>Example: <a href="/query?q=Vua nhà Tây Sơn">/query?t=Vua nhà Tây Sơn</a></p>
+     <p>Example: <a href="/query?t=Vua nhà Tây Sơn">/query?t=Vua nhà Tây Sơn</a></p>
   </body>
 </html>
